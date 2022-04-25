@@ -28,4 +28,4 @@ public class Prob3 {
 		}
 		scanner.close();
 	}
-}
+}kj
