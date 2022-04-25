@@ -23,7 +23,7 @@ public class Prob3 {
 			for(i=1; i<=num; i++) {
 				if(i%2!=0){
 				sum += i;
-				}	
+				}
 			}System.out.println(sum);
 		}
 		scanner.close();
