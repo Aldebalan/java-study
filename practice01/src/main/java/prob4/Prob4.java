@@ -9,6 +9,7 @@ public class Prob4 {
 
 		System.out.print("문자열을 입력하세요 : ");
 		String text = scanner.nextLine();
+		
 
 		
 		scanner.close();
