@@ -1,4 +1,4 @@
 package prob05;
 
-public class Account {
+public class practice03 {
 }

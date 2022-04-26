@@ -1,6 +1,6 @@
 package prob05;
 
-public class AccountTest {
+public class practice03 {
 
 	public static void main(String[] args) {
 		

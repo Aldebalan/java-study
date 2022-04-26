@@ -2,7 +2,7 @@ package prob02;
 
 import java.util.Scanner;
 
-public class GoodsApp {
+public class practice03 {
 	private static final int COUNT_GOODS = 3;
 
 	public static void main(String[] args) {
@@ -11,7 +11,10 @@ public class GoodsApp {
 		Goods[] goods = new Goods[COUNT_GOODS];
 
 		// 상품 입력
-
+		
+		
+		string goods = scanner.nextline();
+		System.out.println(goods);
 		// 상품 출
 		
 		// 자원정리
