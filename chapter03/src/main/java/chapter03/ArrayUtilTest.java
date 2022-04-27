@@ -15,7 +15,7 @@ public class ArrayUtilTest {
 		System.out.println(Arrays.toString(a1));
 		
 		int[] a2 = ArrayUtil.concat(new int[]{1, 2, 3},new int[]{4, 5, 6});
-		
+		System.out.println(Arrays.toString(a2));
 	}
 
 }

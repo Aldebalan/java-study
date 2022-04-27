@@ -18,8 +18,7 @@ public class GoodsApp {
 			String name = datas[0];
 			int price = Integer.parseInt(datas[1]);
 			int count = Integer.parseInt(datas[2]);
-			
-			System.out.println(name + ":" + price + ":" + count);
+		//	System.out.println(name + " " + price + " " + count);
 		}
 
 		// 상품 출력

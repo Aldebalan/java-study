@@ -1,5 +1,8 @@
 package chapter03;
 
+import java.util.Arrays;
+import java.util.stream.Stream;
+
 public class ArrayUtil {
 
 	public static double[] intToDouble(int[] a) {
@@ -19,8 +22,12 @@ public class ArrayUtil {
 	}
 
 	public static int[] concat(int[] is, int[] is2) {
-		// TODO Auto-generated method stub
-		return null;
+		int isLen = is.length;
+		int isLen2 = is2.length;
+		int[] result3 = new int[isLen + isLen2];
+		System.arraycopy(is, 0, result3, 0, isLen);
+		System.arraycopy(is2, 0, result3, isLen, isLen2);
+		return result3;
 	}
 	
 	

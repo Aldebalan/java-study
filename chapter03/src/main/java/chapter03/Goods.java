@@ -1,6 +1,7 @@
 package chapter03;
 
 public class Goods {
+	
 	public static int countOfGoods;
 	private String name;
 	private int price;
