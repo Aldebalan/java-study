@@ -11,8 +11,11 @@ public class ArrayUtil {
 	}
 
 	public static int[] doubleToInt(double[] ds) {
-		// TODO Auto-generated method stub
-		return null;
+		int[] result2 = new int[ds.length];
+		for(int j = 0; j < ds.length; j++) {
+			result2[j] = (int)ds[j];
+		}
+		return result2;
 	}
 
 	public static int[] concat(int[] is, int[] is2) {
