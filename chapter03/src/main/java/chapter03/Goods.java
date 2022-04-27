@@ -17,6 +17,10 @@ public class Goods {
 		return price;
 	}
 	public void setPrice(int price) {
+		// 데이터 보호 (값 음수 설정 불가)
+		if(price < 0) {
+			price = 0;
+		}
 		this.price = price;
 	}
 	public int getCountStock() {
