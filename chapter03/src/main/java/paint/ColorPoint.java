@@ -3,9 +3,15 @@ package paint;
 public class ColorPoint extends Point {
 	private String color;
 
+	public ColorPoint() {
+//		super(0, 0);
+		
+	}
+	
 	public ColorPoint(int x, int y, String color) {
-		setX(x);
-		setY(y);
+		// setX(x);
+		// setY(y);
+		super(x, y);
 		this.color = color;
 	}
 	
@@ -15,7 +21,7 @@ public class ColorPoint extends Point {
 				"점[x="+ getX() + 
 				",y=" + getY() +
 				",color=" + color +
-				"]을 지웠습니다.");
+				"]을 그렸습니다.");
 	}
 	
 	public String getColor() {
