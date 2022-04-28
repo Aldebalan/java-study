@@ -5,7 +5,6 @@ public class ColorPoint extends Point {
 
 	public ColorPoint() {
 //		super(0, 0);
-		
 	}
 	
 	public ColorPoint(int x, int y, String color) {
