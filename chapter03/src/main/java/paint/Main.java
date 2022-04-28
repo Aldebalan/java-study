@@ -6,10 +6,16 @@ public class Main {
 		Point point1 = new Point();
 		point1.setX(20);
 		point1.setY(10);
+		// point1.show();
+		drawPoint(point1);
 		
-		point1.show();
+		Point point2 = new Point(50, 100);
+		// point2.show();
+		drawPoint(point2);
 	}
 	
-	
+	public static void drawPoint(Point point) {
+		point.show();
+	}
 	
 }

@@ -9,11 +9,13 @@ public class GoodsApp {
 		goods.setPrice(400000);
 		goods.setCountSold(50);
 		goods.setCountStock(30);
-		
 		goods.showInfo();
 		
-		Goods goods2 = new Goods();
-		Goods goods3 = new Goods();
+		Goods goods2 = new Goods("tv", 10000, 10, 10);
+		goods2.showInfo();
+		
+		Goods goods3 = new Goods("com", 0, 0, 0);
+		goods3.showInfo();
 		
 		System.out.println("Goods Count:"+ Goods.countOfGoods);
 		
