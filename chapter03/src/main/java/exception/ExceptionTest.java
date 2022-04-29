@@ -11,7 +11,7 @@ public class ExceptionTest {
 		try {
 			System.out.println("some code.....2");
 
-			int result = (1 + 2 + 3) / 1;
+			int result = (1 + 2 + 3) / b;
 
 			System.out.println("some code......3");
 
