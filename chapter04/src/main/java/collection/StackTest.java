@@ -17,7 +17,7 @@ public class StackTest {
 		}
 		// 비어있는 경우 예외 발생
 		// s.pop();
-		System.out.println("----------");
+		System.out.println("----------"); 
 		
 		s.push("둘리");
 		s.push("마이콜");
