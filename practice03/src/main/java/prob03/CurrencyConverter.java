@@ -2,19 +2,18 @@ package prob03;
 
 public class CurrencyConverter {
 
-	public static void setRate(double d) {
-		// TODO Auto-generated method stub
-		
+	private static double rate;
+
+	public static void setRate(double rate) {
+		CurrencyConverter.rate = rate;
 	}
-	
-	public static double toDollar(double d) {
-		// TODO Auto-generated method stub
-		return 0;
+
+	public static double toDollar(double krw) {
+		return krw / rate;
 	}
-	
-	public static double toKRW(double d) {
-		// TODO Auto-generated method stub
-		return 0;
+
+	public static double toKRW(double dollar) {
+		return dollar * rate;
 	}
 
 

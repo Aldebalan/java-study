@@ -25,13 +25,7 @@ public class Sort {
 					array[i + 1] = temp;
 				}
 			}
-
-//			for (int j = 0; j < count; j++ ) {
-//				
-//				System.out.println(array[i] + " " + array[j] + " ");
-//			}System.out.println(" ");
 		}
-
 		// 결과 출력
 		System.out.println("\nAfter Sort.");
 

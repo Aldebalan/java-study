@@ -5,12 +5,12 @@ public class Book {
 	private String title;
 	private String author;
 	private int stateCode; // 0: 대여중, 1: 재고있음
-	
-	
+
 	public Book(int bookNo, String title, String author) {
 		this.bookNo = bookNo;
 		this.title = title;
 		this.author = author;
+		this.stateCode = 1;
 	}
 
 	public int getBookNo() {
@@ -44,20 +44,14 @@ public class Book {
 	public void setStateCode(int stateCode) {
 		this.stateCode = stateCode;
 	}
-	
+
 	public void rent() {
-		
-	}
-	
-	public void print() {
-		for(int i=0; i < 10; i++) { // 조건 수정
-			boolean stateCode = true;
-			System.out.println(
-					"책 제목:" + title +
-					"작가:" + author +
-					"대여 유무:" + (stateCode ? "재고있음" : "재고없음"));
-		}
+		stateCode = 0;
+		System.out.println(title + "이(가) 대여 됐습니다.");
 	}
 
-	
+	public void print() {
+		System.out.println("책 제목:" + title + " 작가:" + author + " 대여 유무:" + (stateCode == 1 ? "재고있음" : "재고없음"));
+	}
+
 }

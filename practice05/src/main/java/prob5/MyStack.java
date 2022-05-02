@@ -1,5 +1,7 @@
 package prob5;
 
+import java.util.Stack;
+
 public class MyStack {
 	private int top = 0;
 	private String[] buffer;
