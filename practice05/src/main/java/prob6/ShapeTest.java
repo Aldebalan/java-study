@@ -1,5 +1,6 @@
 package prob6;
 
+import java.awt.Shape;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,8 +9,8 @@ public class ShapeTest {
 	public static void main(String[] args) {
 		List<Shape> list = new ArrayList<Shape>();
 		
-		list.add( new Rectangle(5, 6) );
-		list.add( new RectTriangle( 6, 2) );
+		list.add( new Rectangle() );
+		list.add( new RectTriangle() );
 		
 		for( Shape shape : list ) {
 			System.out.println( "area:" + shape.getArea() );
