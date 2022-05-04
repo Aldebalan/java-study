@@ -12,8 +12,8 @@ public class MainApp {
 			stack.push(".");
 
 			while (stack.isEmpty() == false) {
-				String s = stack.pop();
-				System.out.println( s );
+				Object s = stack.pop();
+				System.out.println(s);
 			}
 
 			System.out.println("======================================");
@@ -23,9 +23,9 @@ public class MainApp {
 
 			System.out.println(stack.pop());
 			System.out.println(stack.pop());
-			
-		} catch ( MyStackException ex) {
-			ex.printStackTrace();
+
+		} catch (MyStackException ex) {
+			System.out.println(ex);
 		}
 
 	}
