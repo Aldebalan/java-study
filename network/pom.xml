@@ -12,16 +12,8 @@
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
   
-  	<modules>
-		<module>practice01</module>
-		<module>practice02</module>
-		<module>practice03</module>
-		<module>chapter03</module>
-		<module>practice04</module>
-		<module>chapter04</module>
-		<module>practice05</module>
-		<module>finaltest</module>
-		<module>network</module>
-  	</modules>
+  	<build>
+  		<finalName>network</finalName>
+  	</build>
   
 </project>
