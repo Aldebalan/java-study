@@ -24,7 +24,7 @@ public class UDPEchoServer {
 
 				byte[] rcvData = rcvPacket.getData();
 				int length = rcvPacket.getLength();
-				String message = new String(rcvData, 0, length, "UTF=8");
+				String message = new String(rcvData, 0, length, "UTF-8");
 				System.out.println("[Server] receive : " + message);
 
 				// 3. 데이터 송신
