@@ -1,19 +1,26 @@
 package chat;
 
 import java.io.IOException;
+import java.io.Writer;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ChatServer {
 
-	private static final int PORT = 5555;
-
+	Socket socket;
+	ServerSocket serverSocket;
+	private static final int PORT = 7777;
+	List<Writer> listWriters = new ArrayList<Writer>();
+	
 	public static void main(String[] args) {
+		new ChatServer().go();
+	}
 
-		ServerSocket serverSocket = null;
-
+	public void go() {
 		try {
 			// 1. 서버 소켓 생성
 			serverSocket = new ServerSocket();
@@ -26,7 +33,7 @@ public class ChatServer {
 			// 3. 요청 대기
 			while (true) {
 				Socket socket = serverSocket.accept();
-				new EchoChatServerThread().start();
+				new ChatServerThread(socket, listWriters).start();
 			}
 
 		} catch (IOException e) {
@@ -43,6 +50,6 @@ public class ChatServer {
 	}
 
 	static void log(String log) {
-		System.out.println("[Echo Client] " + log);
+		System.out.println("[chatServer] " + log);
 	}
 }
